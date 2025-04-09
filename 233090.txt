@@ -1,0 +1,55 @@
+Прв дел 
+
+$ mkdir SI_2025_lab1_233090 
+
+$ cd SI_2025_lab1_233090 
+
+$ git init 
+
+$ git remote add origin https://github.com/BojanChe04/SI_2025_lab1_233090.git 
+
+$ nano README.md 
+
+$ git commit -a -m "Initial commit" 
+
+$ nano SI2025Lab1Main.java 
+
+$ git commit -a -m "Add starter code" 
+
+$ git push origin master 
+
+ 
+
+Втор дел 
+
+$ git fetch From https://github.com/BojanChe04/SI_2025_lab1_233090 
+
+[new branch] count -> origin/count 
+
+[new branch] find -> origin/find 
+
+[new branch] remove -> origin/remove 
+
+$ nano SI2025Lab1Main.java 
+
+$ git add. 
+
+$ git commit -a -m "Count tasks per category" 
+
+$ git push origin count 
+
+Истот го правам за гранката remove 
+
+Истото и за гранката find само без merge на github, па : 
+
+$ git checkout master 
+
+$ git merge find 
+
+$ git push origin master To https://github.com/BojanChe04/SI_2025_lab1_233090.git ! [rejected] master -> master (fetch first) error: failed to push some refs to 'https://github.com/BojanChe04/SI_2025_lab1_233090.git' hint: Updates were rejected because the remote contains work that you do not hint: have locally. This is usually caused by another repository pushing to hint: the same ref. If you want to integrate the remote changes, use hint: 'git pull' before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details. 
+
+Се случува конфликт 
+
+$ git pull 
+
+$ git push origin master (ова локално го правам, се поместува  во Done) 

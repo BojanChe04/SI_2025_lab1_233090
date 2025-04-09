@@ -1,0 +1,15 @@
+*   7fe79e2 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'master' of https://github.com/BojanChe04/SI_2025_lab1_233090
+|\
+| *   bd80c01 Merge pull request #11 from BojanChe04/remove
+| |\
+| | * 899f91b (origin/remove, remove) Remove by name
+| * |   5973b2b Merge pull request #10 from BojanChe04/count
+| |\ \
+| | |/
+| |/|
+| | * 0431d31 (origin/count, count) Count tasks per category
+| |/
+* / ecbcb9a (origin/find, find) Find all completed tasks
+|/
+* fc613b6 Add starter code
+* 67060d6 Initial commit
