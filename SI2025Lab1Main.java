@@ -64,7 +64,7 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        task.removeIf(task -> task.getName().equalsIgnoreCase(name));
     }
 
     // 2. Find all completed tasks
@@ -99,7 +99,8 @@ class TaskManager {
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
         // TODO: Implement counting logic
-        return new HashMap<>();
+ return tasks.stream().collect(Collectors.groupingBy(Task::getCategory, Collectors.reducing(0, e -> 1, Integer::sum)));
+
     }
 
     // 8. Mark a task as completed by name
